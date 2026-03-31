@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'tachiyomiorg'
+group = 'com.github.hagitori'
 
 android {
     compileSdkVersion 33
@@ -53,7 +53,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'tachiyomiorg'
+                groupId = 'com.github.hagitori'
                 artifactId = 'image-decoder'
                 version = '1.0'
             }
